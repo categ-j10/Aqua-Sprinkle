@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Aqua-Sprinkle</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ==========================
+   CONTACT BANNER
+========================== */
+
+.contact-banner{
+    height:450px;
+
+    background:
+    linear-gradient(
+        rgba(0,70,140,0.55),
+        rgba(0,70,140,0.65)
+    ),
+    url("images/hero.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.contact-banner h1{
+    font-size:60px;
+    font-weight:700;
+    text-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+@media(max-width:900px){
+
+    .contact-banner{
+        height:300px;
+    }
+
+    .contact-banner h1{
+        font-size:40px;
+    }
+
+}
+
+.contact-banner h1{
+    font-size:60px;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 50px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-card{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-card h2{
+    margin-bottom:5px;
+    color:#003366;
+}
+
+.contact-card p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    height:220px;
+    object-fit:cover;
+}
+
+@media(max-width:900px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-banner h1{
+        font-size:40px;
+    }
+
+    .contact-container{
+        padding:50px 25px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR (UNIFIED) -->
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Aqua-Sprinkle Logo">
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="login-btn" href="login.html">Login</a></li>
+    </ul>
+
+</nav>
+
+<!-- BANNER -->
+<section class="contact-banner">
+    <h1>Contact Aqua-Sprinkle</h1>
+</section>
+
+<!-- CONTENT -->
+<section class="contact-container">
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h2>Get In Touch</h2>
+            <a href="https://wa.me/918301879910" target="_blank"
+            class="whatsapp-btn">Chat on WhatsApp</a>
+
+            <p><strong>Phone:</strong> <a href="tel:+91 9995073152">+91 9995073152</a></p>
+            <p><strong>Email:</strong> <a href="mailto:aquawaterfilter@gmail.com">aquawaterfilter@gmail.com</a></p>
+            <p><strong>Address:</strong> XM7M+2WP, Kolam, Kerala, India.</p>
+            <p><strong>Maps:</strong> <a href="https://maps.google.com" target="_blank">View Our Location</a></p>
+
+            <p>
+                We are ready to help you choose the right
+                filtration solution for your water quality needs.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/metal.webp" alt="Metal Filter">
+            <img src="images/75.jpeg" alt="Water System">
+            <img src="images/about-filter.png" alt="Filter Setup">
+            <img src="images/hard.jpg" alt="Hard Water Solution">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="customers-section">
+
+    <h2>Our Happy Customers</h2>
+
+    <p class="customers-subtitle">
+        Trusted by families, businesses, and organizations who rely on
+        Aqua-Sprinkle for clean and safe water solutions.
+    </p>
+
+    <div class="customers-gallery">
+
+        <div class="customer-card">
+            <img src="images/c1.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c2.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c3.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c4.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c5.jpeg" alt="Satisfied Customer">
+            <h3>Office Installation</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c66.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c7.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>

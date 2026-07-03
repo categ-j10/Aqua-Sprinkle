@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Aqua-Sprinkle</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- PAGE SPECIFIC STYLES -->
+<style>
+
+.about-banner{
+    height:450px;
+
+    background:
+    linear-gradient(
+        rgba(0,70,140,0.55),
+        rgba(0,70,140,0.65)
+    ),
+    url("images/hero.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.about-banner h1{
+    font-size:60px;
+    font-weight:700;
+    text-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+@media(max-width:900px){
+
+    .about-banner{
+        height:300px;
+    }
+
+    .about-banner h1{
+        font-size:40px;
+    }
+
+}
+
+.about-banner h1{
+    font-size:60px;
+}
+
+.about-page{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 50px;
+}
+
+.story-section{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin-bottom:80px;
+}
+
+.story-text{
+    flex:1;
+}
+
+.story-text h2{
+    color:#003366;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.story-text p{
+    line-height:1.8;
+    font-size:18px;
+    color:#444;
+}
+
+.story-image{
+    flex:1;
+}
+
+.story-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.mission-section{
+    background:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.mission-section h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+    font-size: 40px;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.mission-card{
+    text-align:center;
+}
+
+.mission-card h3{
+    margin-bottom:15px;
+    color:#0077cc;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .story-section{
+        flex-direction:column;
+    }
+
+    .about-banner h1{
+        font-size:40px;
+    }
+
+    .about-page{
+        padding:50px 25px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR (UNIFIED ACROSS ALL PAGES) -->
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Aqua-Sprinkle Logo">
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="login-btn" href="login.html">Login</a></li>
+    </ul>
+
+</nav>
+
+<!-- BANNER -->
+<section class="about-banner">
+    <h1>About Aqua-Sprinkle</h1>
+</section>
+
+<!-- CONTENT -->
+<div class="about-page">
+
+    <section class="story-section">
+
+        <div class="story-text">
+
+            <h2>Our Story</h2>
+
+            <p>
+                Aqua-Sprinkle was founded with a simple belief:
+                every family and business deserves access to clean,
+                safe, and healthy water.
+            </p>
+
+            <p>
+                We recognized that water quality issues are different
+                from one location to another. Some sources contain
+                excess sediment, others suffer from hardness, chlorine,
+                heavy metals, or unpleasant odors.
+            </p>
+
+            <p>
+                Instead of providing one solution for every problem,
+                we developed specialized filtration systems that target
+                specific contaminants using carefully selected materials
+                and technologies.
+            </p>
+
+        </div>
+
+        <div class="story-image">
+            <img src="images/about-filter.png" alt="Water Filter">
+        </div>
+
+    </section>
+
+    <section class="mission-section">
+
+        <h2>Our Mission</h2>
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+                <h3>Clean Water</h3>
+                <p>Deliver reliable purification solutions for every customer.</p>
+            </div>
+
+            <div class="mission-card">
+                <h3>Innovation</h3>
+                <p>Use modern filtration materials and treatment technologies.</p>
+            </div>
+
+            <div class="mission-card">
+                <h3>Trust</h3>
+                <p>Build long-term relationships through quality and service.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<section class="customers-section">
+
+    <h2>Our Happy Customers</h2>
+
+    <p class="customers-subtitle">
+        Trusted by families, businesses, and organizations who rely on
+        Aqua-Sprinkle for clean and safe water solutions.
+    </p>
+
+    <div class="customers-gallery">
+
+        <div class="customer-card">
+            <img src="images/c1.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c2.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c3.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c4.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c5.jpeg" alt="Satisfied Customer">
+            <h3>Office Installation</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c66.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c7.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua-Sprinkle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero-header">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Aqua-Sprinkle Logo">
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="login-btn" href="login.html">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO VIDEO -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="images/vid.mp4" type="video/mp4">
+    </video>
+
+    <!-- DARK OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>Pure Water,<br>Every Drop Matters</h1>
+
+            <p>
+                Advanced water purification systems for homes,
+                businesses and industrial facilities.
+            </p>
+
+            <button onclick="location.href='products.html'">
+                Explore Products
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="card">
+        <h3>Safe Drinking Water</h3>
+        <p>Removes impurities and harmful contaminants.</p>
+    </div>
+
+    <div class="card">
+        <h3>Modern Technology</h3>
+        <p>High-performance filtration systems.</p>
+    </div>
+
+    <div class="card">
+        <h3>24/7 Support</h3>
+        <p>Professional installation and maintenance.</p>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+
+    <div class="about-text">
+
+        <h2>About Aqua-Sprinkle</h2>
+
+        <p>
+            At Aqua-Sprinkle, we believe every water source has
+            unique challenges. Different water quality issues
+            require different treatment methods.
+        </p>
+
+        <p>
+            We provide specialized filtration systems using
+            carefully selected materials to target sediments,
+            chlorine, hardness, heavy metals and other contaminants.
+        </p>
+
+    </div>
+
+    <div class="about-image">
+        <img src="images/about-filter.png" alt="Water Filter">
+    </div>
+
+</section>
+
+<!-- HAPPY CUSTOMERS -->
+<section class="customers-section">
+
+    <h2>Our Happy Customers</h2>
+
+    <p class="customers-subtitle">
+        Trusted by families, businesses, and organizations who rely on
+        Aqua-Sprinkle for clean and safe water solutions.
+    </p>
+
+    <div class="customers-gallery">
+
+        <div class="customer-card">
+            <img src="images/c1.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c2.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c3.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c4.jpeg" alt="Satisfied Customer">
+            <h3>Commercial Client</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c5.jpeg" alt="Satisfied Customer">
+            <h3>Office Installation</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c66.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+        <div class="customer-card">
+            <img src="images/c7.jpeg" alt="Satisfied Customer">
+            <h3>Residential Customer</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>
